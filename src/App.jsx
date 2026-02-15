@@ -7,11 +7,13 @@ import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 import Home from "./pages/Home";
 import Result from "./pages/Result";
+import Challenges from "./components/core/home/Challenges";
 
 const App = () => {
+  // LENIS SCROLLING EFFECT
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2, // scroll speed smoothness
+      duration: .5, // scroll speed smoothness
       smooth: true,
     });
 
@@ -33,6 +35,7 @@ const App = () => {
       <main>
         <Home />
         <About />
+        <Challenges />
         <Courses />
         <Result />
         <Contact />

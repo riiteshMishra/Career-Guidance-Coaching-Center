@@ -16,7 +16,7 @@ const Arrow = () => {
         transition={{ type: "spring", stiffness: 300 }}
         className="
           flex items-center justify-center
-          px-12 py-3
+          px-26 py-2
           bg-white/10
           backdrop-blur-xl
           border border-white/30

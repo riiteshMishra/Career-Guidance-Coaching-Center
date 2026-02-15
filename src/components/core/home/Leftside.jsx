@@ -18,11 +18,11 @@ const Leftside = () => {
         prescribed textbook.
       </p>
 
-      {/* <p className="mt-4 text-lg text-gray-100">
+      <p className="mt-4 text-lg text-gray-100">
         At our institute, even academically weak students receive individual
         attention, extra practice sessions, and continuous mentoring to ensure
         steady improvement.
-      </p> */}
+      </p>
 
       <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
         Enroll Now
