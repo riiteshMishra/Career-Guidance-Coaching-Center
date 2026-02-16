@@ -1,12 +1,14 @@
 import { Link, Links } from "react-router-dom";
 import { navLinks } from "../../../data/Nav-links";
+import Logo from "../../common/Logo";
 
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4 ">
       <div className="container mx-auto ">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">Logo</h1>
+          {/* LOGO */}
+          <Logo />
           <div className="sm:flex items-center gap-x-10 hidden">
             {navLinks.map((link) => (
               <div key={link.id}>

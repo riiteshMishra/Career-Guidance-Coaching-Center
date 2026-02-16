@@ -1,11 +1,11 @@
-import backgrounImage from "../../../assets/Images/BackgroundImage.png";
+import HeroImage from "/hero.jpg";
 
 const Rightside = () => {
   return (
     <div className="sm:w-1/2 w-full   ">
       <div className=" py-10 w-11/12 sm:w-full mx-auto">
         <img
-          src={backgrounImage}
+          src={HeroImage}
           alt="Background"
           className="w-full h-full object-cover rounded-lg shadow-lg pointer-events-none"
         />
