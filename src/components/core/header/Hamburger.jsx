@@ -3,14 +3,16 @@ import { GiTireIronCross } from "react-icons/gi";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Hamburger = ({ drawerOpen, setDrawerOpen }) => {
-  const handleCllick = () => {
-    navigator.vibrate(100);
+  const handleClick = () => {
+    if ("vibrate" in navigator) navigator.vibrate(50);
+
     return setDrawerOpen((prev) => !prev);
   };
+
   return (
     <motion.div
       className="text-white cursor-pointer text-2xl block sm:hidden z-50"
-      onClick={() => handleCllick()}
+      onClick={() => handleClick()}
     >
       <AnimatePresence mode="wait">
         {drawerOpen ? (
