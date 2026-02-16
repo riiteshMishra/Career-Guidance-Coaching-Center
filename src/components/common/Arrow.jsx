@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Arrow = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mb-4">
       <motion.div
         whileHover={{
           scale: 1.08,

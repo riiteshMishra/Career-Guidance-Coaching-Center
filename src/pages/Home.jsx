@@ -2,6 +2,7 @@ import React from "react";
 import Leftside from "../components/core/home/Leftside";
 import Rightside from "../components/core/home/Rightside";
 import Arrow from "../components/common/Arrow";
+import Instructor from "../components/core/home/Instructor";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
 
       {/* ARROW */}
       <Arrow />
+      <Instructor />
     </div>
   );
 };

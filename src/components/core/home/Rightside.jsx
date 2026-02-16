@@ -6,6 +6,7 @@ const Rightside = () => {
       <div className=" py-10 w-11/12 sm:w-full mx-auto">
         <img
           src={HeroImage}
+          loading="lazy"
           alt="Background"
           className="w-full h-full object-cover rounded-lg shadow-lg pointer-events-none"
         />
