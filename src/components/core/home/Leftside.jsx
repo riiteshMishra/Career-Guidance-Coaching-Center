@@ -13,7 +13,7 @@ const Leftside = () => {
         Complete English Grammar & Full Book Coverage
       </h1>
 
-      <p className="mt-4 text-gray-300  leading-tite max-w-lg">
+      <p className="mt-4 text-gray-300  leading-tite max-w-lg dynamic-small-text max-w-xl text-justify">
         At our institute, we ensure 100% completion of the
         <span className="text-yellow-400 font-semibold text-justify text-[clamp(1rem,2vw,1.6rem)]">
           {" "}
@@ -30,7 +30,7 @@ const Leftside = () => {
         prescribed textbook.
       </p> */}
 
-      <p className="mt-4 text-lg text-gray-100">
+      <p className="mt-4 text-lg text-gray-100 dynamic-small-text max-w-xl text-justify">
         At our institute, even academically weak students receive individual
         attention, extra practice sessions, and continuous mentoring to ensure
         steady improvement.
