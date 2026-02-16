@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import LogoImg from "/logo.png";
 
-const Logo = () => {
+const Logo = ({ height, width }) => {
   return (
     <Link to="/" className="flex items-center gap-x-2">
       <motion.img
         src={LogoImg}
         alt="Career Coaching Center Logo"
-        height={40}
-        width={40}
+        height={height || 40}
+        width={width || 40}
         className="rounded-full"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
