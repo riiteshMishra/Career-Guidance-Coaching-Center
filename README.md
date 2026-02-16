@@ -1,16 +1,68 @@
-# React + Vite
+# 🎓 Career Guidance & Coaching Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive website built for a Career Coaching Center to provide information about courses, results, and institute details.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive Header & Footer
+- Home Page Section
+- About Section
+- Courses Information
+- Results Section
+- Contact Section
+- Clean UI with Tailwind CSS
+- Component-based structure (React)
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+│
+├── components/
+│ ├── core/
+│ │ ├── Header/
+│ │ └── Footer/
+│
+├── pages/
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Courses.jsx
+│ ├── Result.jsx
+│ └── Contact.jsx
+│
+└── App.js
+
+## 📌 Installation
+
+1. Clone the repository:
+
+https://github.com/riiteshMishra/Career-Guidance-Coaching-Center
+
+2. Navigate to project folder:
+
+# cd Career Guidance & Coaching Center
+
+3. Install dependencies:
+
+# npm install
+
+4. Start development server:
+
+# npm start
+
+## 🎯 Purpose
+
+This project is designed to help coaching institutes establish an online presence and provide structured information to students.
+
+## 📞 Contact
+
+For any inquiries, feel free to connect.
+
+---
+
+⭐ If you like this project, don't forget to give it a star!
