@@ -6,7 +6,7 @@ const Instructor = () => {
       <section className="py-16 px-4 text-white container mx-auto">
         <div className="flex  justify-between items-center md:items-start gap-12 flex-col md:flex-row">
           {/* 🔹 Instructor Image */}
-          <div className="w-full md:w-1/2 flex ">
+          <div className="w-full md:w-1/2 flex justify-center sm:justify-start">
             <img
               src={InstructorImage}
               alt="Instructor image"
