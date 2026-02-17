@@ -15,8 +15,9 @@ const App = () => {
   // LENIS SCROLLING EFFECT
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 0.5, // scroll speed smoothness
-      smooth: true,
+      duration: 1.1,
+      smoothWheel: true,
+      smoothTouch: false,
     });
 
     function raf(time) {
@@ -29,7 +30,7 @@ const App = () => {
     return () => {
       lenis.destroy();
     };
-  }, []);
+  }, [appLoading]);
 
   useEffect(() => {
     const timer = setTimeout(() => {

@@ -7,7 +7,7 @@ const Leftside = () => {
         className="font-bold leading-tight dynamic-text text-(--secondary-color)
  mb-3"
       >
-        Confuse in English ?
+        Career Coaching center
       </h1>
       <h1 className="text-lg font-bold leading-tight  text-(--primary-color) dynamic-medium-text">
         Complete English Grammar & Full Book Coverage
