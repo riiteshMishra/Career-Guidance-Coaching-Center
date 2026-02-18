@@ -2,26 +2,34 @@ import { motion } from "framer-motion";
 import Leftside from "./Leftside";
 import Rightside from "./Rightside";
 import Arrow from "../../common/Arrow";
-import { useSelector } from "react-redux";
+import { Helmet } from "react-helmet";
 
 const Hero = () => {
-  const { theme } = useSelector((state) => state.ui);
   return (
-    <motion.div
-      className={`${
-        theme === "dark" ? "bg-black text-white" : "bg-white text-black"
-      } transition-colors duration-500 h-fit pb-5`}
-      id="home"
-    >
-      <section className="  flex-col md:flex-row justify-between gap-4   container mx-auto ">
-        <div className=" flex flex-col md:flex-row justify-between gap-4   ">
+    <>
+      {/* 🔹 SEO - Only Main Page Identity */}
+      <Helmet>
+        <title>
+          Best English Coaching for Class 9 & 10 | Career Coaching Center
+        </title>
+        <meta
+          name="description"
+          content="Expert English coaching with full grammar coverage, textbook explanation, and board exam preparation for Class 9th and 10th students."
+        />
+      </Helmet>
+
+      <motion.div
+        className="bg-white dark:bg-black text-black dark:text-white transition-colors duration-500 pb-5"
+        id="home"
+      >
+        <section className="container mx-auto flex flex-col md:flex-row justify-between gap-6 items-center">
           <Leftside />
           <Rightside />
-        </div>
+        </section>
 
         <Arrow />
-      </section>
-    </motion.div>
+      </motion.div>
+    </>
   );
 };
 

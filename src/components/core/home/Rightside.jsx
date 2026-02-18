@@ -2,12 +2,12 @@ import HeroImage from "/hero.jpg";
 
 const Rightside = () => {
   return (
-    <div className="sm:w-1/2 w-full   ">
-      <div className=" py-10 w-11/12 sm:w-full mx-auto">
+    <div className="sm:w-1/2 w-full">
+      <div className="py-10 w-11/12 sm:w-full mx-auto">
         <img
           src={HeroImage}
           loading="lazy"
-          alt="Background"
+          alt="Students attending English coaching class for Class 9th and 10th"
           className="w-full h-full object-cover rounded-lg shadow-lg pointer-events-none"
         />
       </div>
