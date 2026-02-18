@@ -2,16 +2,14 @@ import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import Footer from "./components/core/Footer/Index";
 import Header from "./components/core/header/Index";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Courses from "./pages/Courses";
 import Home from "./pages/Home";
-import Result from "./pages/Result";
-import Challenges from "./components/core/home/Challenges";
 import AppLoading from "./components/common/AppLoading";
+import { useSelector } from "react-redux";
 
 const App = () => {
+  const { theme } = useSelector((state) => state.ui);
   const [appLoading, setAppLoading] = useState(true);
+
   // LENIS SCROLLING EFFECT
   useEffect(() => {
     const lenis = new Lenis({
@@ -32,6 +30,7 @@ const App = () => {
     };
   }, [appLoading]);
 
+  // GLOBLE APP LOADING
   useEffect(() => {
     const timer = setTimeout(() => {
       setAppLoading(false);
@@ -39,9 +38,9 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (appLoading) {
-    return <AppLoading />;
-  }
+  // if (appLoading) {
+  //   return <AppLoading />;
+  // }
 
   return (
     <div className="min-h-screen   text-gray-800">

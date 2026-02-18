@@ -13,9 +13,6 @@ const Home = () => {
   return (
     <div className=" h-fit">
       <Hero />
-
-      {/* ARROW */}
-      {/* <Arrow /> */}
       <Instructor />
       <About />
       <Courses />

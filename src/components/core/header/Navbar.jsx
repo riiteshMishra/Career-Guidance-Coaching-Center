@@ -7,6 +7,7 @@ import { GiTireIronCross } from "react-icons/gi";
 import { useState } from "react";
 import Drawer from "./Drawer";
 import Hamburger from "./Hamburger";
+import ThemeSwitcher from "../../common/ThemeSwitcher";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -16,7 +17,11 @@ const Navbar = () => {
       <div className="container mx-auto ">
         <div className="flex justify-between items-center">
           {/* LOGO */}
-          <Logo />
+          <div className="flex items-center justify-center gap-x-4">
+            <Logo />
+            <ThemeSwitcher />
+          </div>
+
           <div className="sm:flex items-center gap-x-10 hidden">
             {navLinks.map((link) => (
               <div key={link.id}>
