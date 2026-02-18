@@ -48,11 +48,6 @@ const App = () => {
       <Header />
       <main>
         <Home />
-        <About />
-        <Challenges />
-        <Courses />
-        <Result />
-        <Contact />
       </main>
       <Footer />
     </div>

@@ -3,18 +3,24 @@ import Leftside from "../components/core/home/Leftside";
 import Rightside from "../components/core/home/Rightside";
 import Arrow from "../components/common/Arrow";
 import Instructor from "../components/core/home/Instructor";
+import About from "../components/core/home/About";
+import Courses from "../components/core/home/Courses";
+import Result from "../components/core/home/Results";
+import Contact from "../components/core/home/Contact";
+import Hero from "../components/core/home/Hero";
 
 const Home = () => {
   return (
-    <div className=" bg-black/70 py-5  h-fit">
-      <section className="flex flex-col md:flex-row justify-between gap-4   container mx-auto ">
-        <Leftside />
-        <Rightside />
-      </section>
+    <div className=" h-fit">
+      <Hero />
 
       {/* ARROW */}
-      <Arrow />
+      {/* <Arrow /> */}
       <Instructor />
+      <About />
+      <Courses />
+      <Result />
+      <Contact />
     </div>
   );
 };
