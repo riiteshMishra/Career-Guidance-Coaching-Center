@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 const App = () => {
   const { theme } = useSelector((state) => state.ui);
   const [appLoading, setAppLoading] = useState(true);
+  const appLoader = import.meta.env.PROD;
 
   // LENIS SCROLLING EFFECT
   useEffect(() => {
@@ -49,9 +50,9 @@ const App = () => {
     }
   }, [theme]);
 
-  // if (appLoading) {
-  //   return <AppLoading />;
-  // }
+  if (appLoading && appLoader) {
+    return <AppLoading />;
+  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
