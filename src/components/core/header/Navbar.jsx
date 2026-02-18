@@ -1,10 +1,8 @@
 import { Link, Links } from "react-router-dom";
 import { navLinks } from "../../../data/Nav-links";
 import Logo from "../../common/Logo";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { GiTireIronCross } from "react-icons/gi";
-
-import { useState } from "react";
+import { useScroll, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 import Hamburger from "./Hamburger";
 import ThemeSwitcher from "../../common/ThemeSwitcher";
@@ -12,8 +10,30 @@ import ThemeSwitcher from "../../common/ThemeSwitcher";
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
+  const { scrollY } = useScroll();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = scrollY.on("change", (latest) => {
+      if (latest > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
+
+    return () => unsubscribe();
+  }, [scrollY]);
+
   return (
-    <nav className="bg-gray-800 text-white p-4 relative z-1">
+    <motion.nav
+      className="bg-gray-800 text-white p-2 z-40 sticky top-4 mx-auto transition-all duration-300 border-white"
+      animate={{
+        borderRadius: scrolled ? "0 0 10px 10px" : "0px",
+        borderBottomWidth: scrolled ? "1px" : "0px",
+      }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="container mx-auto ">
         <div className="flex justify-between items-center">
           {/* LOGO */}
@@ -40,7 +60,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

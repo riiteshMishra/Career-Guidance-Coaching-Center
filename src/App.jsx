@@ -38,12 +38,23 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // THEME
+  useEffect(() => {
+    const root = document.documentElement;
+
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [theme]);
+
   // if (appLoading) {
   //   return <AppLoading />;
   // }
 
   return (
-    <div className="min-h-screen   text-gray-800">
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <Header />
       <main>
         <Home />

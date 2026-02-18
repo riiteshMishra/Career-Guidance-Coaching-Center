@@ -45,7 +45,7 @@ const Drawer = ({ setDrawerOpen, drawerOpen }) => {
           />
           {/* Side Panel */}
           <motion.section
-            className="fixed top-16 right-0 w-full h-full bg-black z-50 shadow-xl"
+            className="fixed top-16 right-0 left-0 bottom-0 w-full  bg-black z-50 shadow-xl"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
